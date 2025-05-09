@@ -20,6 +20,7 @@ body {
 
 .container {
     text-align: center;
+    padding: 20px;
 }
 
 header h1 {
@@ -65,4 +66,38 @@ header h1 {
 .redes-sociales a img:hover {
     transform: scale(1.2);
     opacity: 0.85;
+}
+
+/* Media Queries para adaptar a dispositivos móviles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .subtitulo {
+        font-size: 1rem;
+    }
+
+    .redes-sociales a img {
+        width: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .subtitulo {
+        font-size: 0.9rem;
+    }
+
+    .redes-sociales a img {
+        width: 35px;
+    }
+
+    .redes-sociales {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
